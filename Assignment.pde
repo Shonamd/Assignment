@@ -35,6 +35,9 @@ void opening()
 {
   background(0);
   stroke(7, 148, 175);
+  strokeWeight(.5);
+  
+  // border
   line((width/20),(height/25),(width/20),(height/25*24));
   line((width/20+5),(height/25),(width/20+5),(height/25*24));
   line((width/20*19),(height/25),(width/20*19),(height-20));
@@ -44,4 +47,15 @@ void opening()
   line((width/20),(height/25*24+5),(width-20),(height/25*24+5));  
   line((width/20),(height/25*24+10),(width-20),(height/25*24+10));  
 
+  //title
+  PShape title = createShape();
+  title.beginShape();
+  title.strokeWeight(1.5);
+  title.fill(0);
+  title.vertex(width/4, height/25+30);
+  title.vertex(width/4*3, height/25+30);
+  title.vertex(width/4-10, height/25*20);
+  title.vertex(width/4*3+10, height/25*20+30);
+  title.endShape(CLOSE);
+  
 }
