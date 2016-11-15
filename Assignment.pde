@@ -11,7 +11,7 @@ void grid()
   stroke(7, 148, 175);
   float wgridsize = width ;
   float hgridsize = height ;
-  float boxsize = height/100 ;
+  float boxsize = height/70 ;
   float rx = 0, ry = 0;
   
   for(int i = 0; i < wgridsize; i++)
