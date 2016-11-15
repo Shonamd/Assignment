@@ -38,7 +38,7 @@ void create()
   
   shape(shape, 0, 0);
   
-  regular = createFont("Gabriola", 40);
+  regular = createFont("Candara", 40);
   textFont(regular);
   text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
   fill(7, 148, 175);
