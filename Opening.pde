@@ -10,11 +10,13 @@ void opening()
   title();
   earth();
   
-  if(keyPressed == true)
+  if(keyCode == LEFT)
   {
-    x = x % 360 + 20;
+    x = x % 500 + 20;
     earth();
   }
+  
+  start();
 }
 
 PFont regular;
@@ -37,7 +39,6 @@ void title()
   PShape shape ;
   
   //title
-  strokeWeight(2);
   shape = createShape();
   shape.beginShape();
   shape.strokeWeight(1.5);
@@ -64,5 +65,31 @@ void earth()
   translate(width/2, height/2, 0);
   stroke(255);
   sphere(100);
+  
   popMatrix();
+}
+
+void start()
+{
+  PShape start;
+  
+  start = createShape();
+  start.beginShape();
+  start.stroke(7, 148, 175);
+  start.strokeWeight(1.5);
+  start.fill(0);
+  start.vertex(width/4, height/4*3);
+  start.vertex(width/4*3, height/4*3);
+  start.vertex(width/4*3+10, height/4*3+50);
+  start.vertex(width/4-10, height/4*3+50);
+
+  start.endShape(CLOSE);
+  
+  shape(start, 0, 0);
+  
+  regular = createFont("Candara", 40);
+  textFont(regular);
+  textFont(regular);
+  text("Start", width/4+5, ;
+  fill(7, 148, 175);
 }

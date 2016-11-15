@@ -1,7 +1,10 @@
+PImage img;
+
 void setup()
 {
   size(500, 500, P3D);
   background(0);
+  img = loadImage("earth.jpg");
 }
 
 void grid()
