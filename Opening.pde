@@ -1,9 +1,26 @@
+float x = 0;
+
 void opening()
 {  
   background(0);
   stroke(7, 148, 175);
   strokeWeight(.5);
+   
+  border();
+  title();
+  earth();
   
+  if(keyPressed == true)
+  {
+    x = x % 360 + 20;
+    earth();
+  }
+}
+
+PFont regular;
+
+void border()
+{
   // border
   line((width/20),(height/25),(width/20),(height/25*24));
   line((width/20+5),(height/25),(width/20+5),(height/25*24));
@@ -12,15 +29,8 @@ void opening()
   line((width/20),(height/20-10),(width-20),(height/20-10));
   line((width/20),(height/20-15),(width-20),(height/20-15));
   line((width/20),(height/25*24+5),(width-20),(height/25*24+5));  
-  line((width/20),(height/25*24+10),(width-20),(height/25*24+10));  
-  
-  title();
-  earth();
-  grid();
-  
+  line((width/20),(height/25*24+10),(width-20),(height/25*24+10)); 
 }
-
-PFont regular;
 
 void title()
 {
@@ -49,8 +59,9 @@ void title()
 void earth()
 {
   pushMatrix();
-  translate(width/2, height/2, 0);
   fill(7, 148, 175);
+  camera(x, height/2, (height/2)/tan(PI/6), width/2, height/2, 0, 0, 1, 0);
+  translate(width/2, height/2, 0);
   stroke(255);
   sphere(100);
   popMatrix();
