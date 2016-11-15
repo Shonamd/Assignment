@@ -14,13 +14,15 @@ void opening()
   line((width/20),(height/25*24+5),(width-20),(height/25*24+5));  
   line((width/20),(height/25*24+10),(width-20),(height/25*24+10));  
   
-  create();
+  title();
+  earth();
+  grid();
   
 }
 
 PFont regular;
 
-void create()
+void title()
 {
   PShape shape ;
   
@@ -42,4 +44,14 @@ void create()
   textFont(regular);
   text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
   fill(7, 148, 175);
+}
+
+void earth()
+{
+  pushMatrix();
+  translate(width/2, height/2, 0);
+  fill(7, 148, 175);
+  stroke(255);
+  sphere(100);
+  popMatrix();
 }
