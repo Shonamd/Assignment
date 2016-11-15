@@ -32,7 +32,7 @@ void draw()
 }
  
 void opening()
-{
+{  
   background(0);
   stroke(7, 148, 175);
   strokeWeight(.5);
@@ -46,16 +46,26 @@ void opening()
   line((width/20),(height/20-15),(width-20),(height/20-15));
   line((width/20),(height/25*24+5),(width-20),(height/25*24+5));  
   line((width/20),(height/25*24+10),(width-20),(height/25*24+10));  
+  
+  create();
+  
+}
+
+void create()
+{
+  PShape shape ;
 
   //title
-  PShape title = createShape();
-  title.beginShape();
-  title.strokeWeight(1.5);
-  title.fill(0);
-  title.vertex(width/4, height/25+30);
-  title.vertex(width/4*3, height/25+30);
-  title.vertex(width/4-10, height/25*20);
-  title.vertex(width/4*3+10, height/25*20+30);
-  title.endShape(CLOSE);
+  strokeWeight(2);
+  shape = createShape();
+  shape.beginShape();
+  shape.strokeWeight(1.5);
+  shape.fill(0);
+  shape.vertex(width/4, height/25+30);
+  shape.vertex(width/4*3, height/25+30);
+  shape.vertex(width/4*3+10, height/25+height/6);
+  shape.vertex(width/4-10, height/25+height/6);
+  shape.endShape(CLOSE);
   
+  shape(shape, 0, 0);
 }
