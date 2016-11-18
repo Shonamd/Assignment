@@ -92,7 +92,7 @@ void earth()
 
 void check()
 {
-  if (mouseX > width/4-10 && mouseX < width/4*3+50 && mouseY > height/4*3 && mouseY < height/4*3+50)
+  if (mouseX > (width/4) && mouseX < (width/4*3) && mouseY > (height/4*3) && mouseY < (height/4*3+50))
   {
     if( mousePressed == true)
     {
