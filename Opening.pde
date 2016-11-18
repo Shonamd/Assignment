@@ -15,8 +15,7 @@ void opening()
     x = x % 500 + 20;
     earth();
   }
-  
-  start();
+
 }
 
 PFont regular;
@@ -55,22 +54,9 @@ void title()
   textFont(regular);
   text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
   fill(7, 148, 175);
-}
-
-void earth()
-{
-  pushMatrix();
-  fill(7, 148, 175);
-  camera(x, height/2, (height/2)/tan(PI/6), width/2, height/2, 0, 0, 1, 0);
-  translate(width/2, height/2, 0);
-  stroke(255);
-  sphere(100);
   
-  popMatrix();
-}
-
-void start()
-{
+  //Start button
+  
   PShape start;
   
   start = createShape();
@@ -86,10 +72,17 @@ void start()
   start.endShape(CLOSE);
   
   shape(start, 0, 0);
-  
-
- 
-  
 
   fill(7, 148, 175);
+}
+
+void earth()
+{
+  pushMatrix();
+  fill(7, 148, 175);
+  camera(x, height/2, (height/2)/tan(PI/6), width/2, height/2, 0, 0, 1, 0);
+  translate(width/2, height/2, 0);
+  stroke(255);
+  sphere(100);
+  popMatrix();
 }
