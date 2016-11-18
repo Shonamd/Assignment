@@ -18,12 +18,6 @@ void opening()
     earth();
   }
   
-  //Show if mouse over it
-  if (mouseX > (width/4) && mouseX < (width/4*3) && mouseY > (height/4*3) && mouseY < (height/4*3+50))
-  {
-    check = true;
-    title();
-  }
 }
 
 PFont regular;
@@ -56,14 +50,7 @@ void title()
   shape = createShape();
   shape.beginShape();
   shape.strokeWeight(1.5);
-  if( check == false)
-  {
-    shape.fill(0);
-  }
-  else
-  {
-    shape.fill(7, 148, 175);
-  }
+  shape.fill(0);
   shape.vertex(width/4, height/25+30);
   shape.vertex(width/4*3, height/25+30);
   shape.vertex(width/4*3+10, height/25+height/6);
@@ -85,7 +72,14 @@ void title()
   start.beginShape();
   start.stroke(7, 148, 175);
   start.strokeWeight(1.5);
-  start.fill(0);
+  if( check == false)
+  {
+    start.fill(0);
+  }
+  else
+  {
+    start.fill(7, 148, 175);
+  }
   start.vertex(width/4, height/4*3);
   start.vertex(width/4*3, height/4*3);
   start.vertex(width/4*3+10, height/4*3+50);
@@ -94,17 +88,17 @@ void title()
   
   shape(start, 0, 0);
   
-  
-  textFont(regular);
-  text("Start", width/4+75, height/4*3+35);
-  if( check == false)
-  {
-    fill(7, 148, 175);
-  }
-  else
+  if( check == true)
   {
     fill(0);
   }
+  else
+  {
+    fill(7, 148, 175);
+  }
+  
+  textFont(regular);
+  text("Start", width/4+75, height/4*3+35);
     
 }
 
