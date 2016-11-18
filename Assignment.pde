@@ -1,10 +1,9 @@
-//PImage img;
+boolean starting = false ;
 
 void setup()
 {
   size(500, 500, P3D);
   background(0);
-  //img = loadImage("earth.jpg");
 }
 
 void grid()
@@ -31,6 +30,14 @@ void grid()
 
 void draw()
 {
-  opening();
+  if( starting == false)
+  {
+    opening();
+  }
+  
+  if( starting == true)
+  {
+  
+  }
 }
  

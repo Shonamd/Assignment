@@ -9,6 +9,7 @@ void opening()
   border();
   title();
   earth();
+  check();
   
   if(keyCode == LEFT)
   {
@@ -87,4 +88,15 @@ void earth()
   stroke(255);
   sphere(100);
   popMatrix();
+}
+
+void check()
+{
+  if (mouseX > width/4-10 && mouseX < width/4*3+50 && mouseY > height/4*3 && mouseY < height/4*3+50)
+  {
+    if( mousePressed == true)
+    {
+      println("Fail");
+    }
+  }
 }
