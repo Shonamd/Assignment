@@ -87,9 +87,9 @@ void start()
   
   shape(start, 0, 0);
   
-  regular = createFont("Candara", 40);
-  textFont(regular);
-  textFont(regular);
-  text("Start", width/4+5, ;
+
+ 
+  
+
   fill(7, 148, 175);
 }
