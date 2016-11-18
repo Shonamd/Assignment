@@ -15,7 +15,8 @@ void opening()
     x = x % 500 + 20;
     earth();
   }
-
+  
+  //if(mousePressed == 
 }
 
 PFont regular;
@@ -68,11 +69,12 @@ void title()
   start.vertex(width/4*3, height/4*3);
   start.vertex(width/4*3+10, height/4*3+50);
   start.vertex(width/4-10, height/4*3+50);
-
   start.endShape(CLOSE);
   
   shape(start, 0, 0);
-
+  
+  textFont(regular);
+  text("Start", width/4+75, height/4*3+35);
   fill(7, 148, 175);
 }
 
