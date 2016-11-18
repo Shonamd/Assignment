@@ -5,7 +5,6 @@ void opening()
   background(0);
   stroke(7, 148, 175);
   strokeWeight(.5);
-  boolean check = false ;
    
   border();
   title();
@@ -119,7 +118,8 @@ void check()
   {
     if( mousePressed == true)
     {
-      println("Fail");
+      
+      starting = true;
     }
   }
 }
