@@ -5,6 +5,7 @@ void opening()
   background(0);
   stroke(7, 148, 175);
   strokeWeight(.5);
+  boolean check = false ;
    
   border();
   title();
@@ -17,7 +18,12 @@ void opening()
     earth();
   }
   
-  //if(mousePressed == 
+  //Show if mouse over it
+  if (mouseX > (width/4) && mouseX < (width/4*3) && mouseY > (height/4*3) && mouseY < (height/4*3+50))
+  {
+    check = true;
+    title();
+  }
 }
 
 PFont regular;
@@ -39,11 +45,25 @@ void title()
 {
   PShape shape ;
   
+  boolean check = false;
+  
+  if (mouseX > (width/4) && mouseX < (width/4*3) && mouseY > (height/4*3) && mouseY < (height/4*3+50))
+  {
+    check = true;
+  }
+  
   //title
   shape = createShape();
   shape.beginShape();
   shape.strokeWeight(1.5);
-  shape.fill(0);
+  if( check == false)
+  {
+    shape.fill(0);
+  }
+  else
+  {
+    shape.fill(7, 148, 175);
+  }
   shape.vertex(width/4, height/25+30);
   shape.vertex(width/4*3, height/25+30);
   shape.vertex(width/4*3+10, height/25+height/6);
@@ -74,9 +94,18 @@ void title()
   
   shape(start, 0, 0);
   
+  
   textFont(regular);
   text("Start", width/4+75, height/4*3+35);
-  fill(7, 148, 175);
+  if( check == false)
+  {
+    fill(7, 148, 175);
+  }
+  else
+  {
+    fill(0);
+  }
+    
 }
 
 void earth()
