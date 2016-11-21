@@ -24,6 +24,7 @@ PFont regular;
 void border()
 {
   // border
+  stroke(7, 148, 175);
   line((width/20),(height/25),(width/20),(height/25*24));
   line((width/20+5),(height/25),(width/20+5),(height/25*24));
   line((width/20*19),(height/25),(width/20*19),(height-20));

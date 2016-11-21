@@ -1,7 +1,8 @@
 void map()
 {
   background(0);
-  grid();
+  border();
+  box();
 }
 
 void grid()
@@ -24,4 +25,9 @@ void grid()
     line(0, ry, width, ry);
     ry = ry + boxsize ;
   }
+}
+
+void box()
+{
+  
 }

@@ -13,7 +13,7 @@ void draw()
     opening();
   }
   
-  if( starting == true)
+  else if( starting == true)
   {
     map();
   }
