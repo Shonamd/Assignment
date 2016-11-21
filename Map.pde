@@ -2,7 +2,7 @@ void map()
 {
   background(0);
   border();
-  box();
+  screen_box();
 }
 
 void grid()
@@ -27,7 +27,8 @@ void grid()
   }
 }
 
-void box()
+void screen_box()
 {
-  
+   rect(width/20+15, height/25+5, width/20*19-15 ,height/25*24-15 );
+   fill(0);
 }
