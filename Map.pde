@@ -7,28 +7,29 @@ void map()
 
 void grid()
 {
+  
+}
+
+void screen_box()
+{
+  rect(width/20+15, height/25+5, width/20*17 ,height/20*18 );
+  fill(0);
+  
   strokeWeight(.5);
-  stroke(7, 148, 175);
-  float wgridsize = width ;
-  float hgridsize = height ;
-  float boxsize = height/40 ;
-  float rx = 0, ry = 0;
+  float wgridsize = (width/20*17) - (width/20+15) ;
+  float hgridsize = (height/20*18) -(height/25+5) ;
+  float boxsize = hgridsize/40 ;
+  float rx = width/20+15, ry = height/25+5;
   
   for(int i = 0; i < wgridsize; i++)
   {
-    line(rx, 0, rx, height);
+    line(rx, height/25+5, rx, height/20*18);
     rx = rx + boxsize ;
   }
   
   for(int i = 0; i < hgridsize; i++)
   {
-    line(0, ry, width, ry);
+    line(width/20+15, ry, width/20*17, ry);
     ry = ry + boxsize ;
   }
-}
-
-void screen_box()
-{
-   rect(width/20+15, height/25+5, width/20*19-15 ,height/25*24-15 );
-   fill(0);
 }
