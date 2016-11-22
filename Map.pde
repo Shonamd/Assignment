@@ -7,7 +7,6 @@ void viewscreen()
   rcheck();
   gcheck();
   colourbuttons();
-  change();
 }
 
 void screen_box()

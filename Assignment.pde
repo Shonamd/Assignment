@@ -1,4 +1,4 @@
-boolean starting = true;
+boolean starting = false;
 PImage world ;
 
 void setup()

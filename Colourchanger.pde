@@ -37,11 +37,19 @@ void bcheck()
     if(mouseY>7 && mouseY<23)
     {
       bcheck = true ;
+      
+      if(mousePressed == true)
+      {
+        bshade = true;
+        gshade = false;
+        rshade = false;
+        change();
     }
   }
-  else
-  {
-    bcheck = false;
+      else
+      {
+        bcheck = false;
+      }
   }
 }
 
@@ -52,6 +60,14 @@ void rcheck()
     if (mouseY>32 && mouseY<48)
     {
       rcheck = true;
+      
+      if(mousePressed == true)
+      {
+        rshade = true;
+        gshade = false;
+        bshade = false;
+        change();
+      }
     }
   }
   else
@@ -74,10 +90,12 @@ void gcheck()
         gshade = true;
         bshade = false ;
         rshade = false ;
+        change();
     }
   }
-  else
-  {
-    gcheck = false;
+      else
+      {
+        gcheck = false;
+      }
   }
 }
