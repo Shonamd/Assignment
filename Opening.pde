@@ -111,6 +111,7 @@ void earth()
   stroke(255);
   sphere(100);
   popMatrix();
+  println(frameRate);
 }
 
 void check()

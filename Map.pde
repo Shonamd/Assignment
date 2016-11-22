@@ -29,4 +29,9 @@ void screen_box()
     ry = ry + hboxsize ;
   }
   
+  //load map image
+  world.resize(width/20*17, height/5*2);
+  image(world, width/20+15, height/6*3);
+  
+  //make colour buttons
 }
