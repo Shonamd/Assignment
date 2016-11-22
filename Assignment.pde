@@ -1,4 +1,4 @@
-boolean starting = true;
+boolean starting = false;
 
 void setup()
 {
@@ -15,7 +15,6 @@ void draw()
   
   else if( starting == true)
   {
-    map();
+    viewscreen();
   }
 }
- 
