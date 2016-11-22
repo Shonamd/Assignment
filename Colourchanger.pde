@@ -11,6 +11,49 @@ boolean bcheck = false ;
 boolean rcheck = false ;
 boolean gcheck = false ;
 
+void colourbuttons()
+{
+  //make colour buttons
+  strokeWeight(1.5);
+  
+  //button check
+  stroke(blue);
+  if( bcheck == true)
+  {
+    fill(blue);
+    ellipse(12, 15, 16, 16);
+  }
+  else
+  {
+    fill(0);
+    ellipse(12, 15, 16, 16);
+  }
+  
+  stroke(red);
+  if (rcheck == true)
+  {
+    fill(red);
+    ellipse(12, 40, 16, 16);
+  }
+  else
+  {
+    fill(0);
+    ellipse(12, 40, 16, 16);
+  }
+  
+  stroke(green);
+  if (gcheck == true)
+  {
+    fill(green);
+    ellipse(12, 65, 16, 16);
+  }
+  else
+  {
+    fill(0);
+    ellipse(12, 65, 16, 16);
+  }      
+}
+
 void change()
 {
   if( bshade == true)
