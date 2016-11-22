@@ -3,7 +3,7 @@ float x = 0;
 void opening()
 {  
   background(0);
-  stroke(7, 148, 175);
+  stroke(main);
   strokeWeight(.5);
    
   border();
@@ -24,7 +24,7 @@ PFont regular;
 void border()
 {
   // border
-  stroke(7, 148, 175);
+  stroke(main);
   line((width/20),(height/25),(width/20),(height/25*24));
   line((width/20+5),(height/25),(width/20+5),(height/25*24));
   line((width/20*19),(height/25),(width/20*19),(height-20));
@@ -62,7 +62,7 @@ void title()
   regular = createFont("Candara", 40);
   textFont(regular);
   text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
-  fill(7, 148, 175);
+  fill(main);
   
   //Start button
   
@@ -78,7 +78,7 @@ void title()
   }
   else
   {
-    start.fill(7, 148, 175);
+    start.fill(main);
   }
   start.vertex(width/4, height/4*3);
   start.vertex(width/4*3, height/4*3);
@@ -94,7 +94,7 @@ void title()
   }
   else
   {
-    fill(7, 148, 175);
+    fill(main);
   }
   
   textFont(regular);
@@ -105,13 +105,12 @@ void title()
 void earth()
 {
   pushMatrix();
-  fill(7, 148, 175);
+  fill(main);
   camera(x, height/2, (height/2)/tan(PI/6), width/2, height/2, 0, 0, 1, 0);
   translate(width/2, height/2, 0);
   stroke(255);
   sphere(100);
   popMatrix();
-  println(frameRate);
 }
 
 void check()

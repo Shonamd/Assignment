@@ -1,4 +1,4 @@
-boolean starting = false;
+boolean starting = true;
 PImage world ;
 
 void setup()
@@ -12,11 +12,13 @@ void draw()
 {
   if( starting == false)
   {
+    change();
     opening();
   }
   
   else if( starting == true)
   {
+    change();
     viewscreen();
   }
   
