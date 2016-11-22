@@ -3,10 +3,11 @@ void viewscreen()
   background(0);
   border();
   screen_box();
-  colourbuttons();
   bcheck();
   rcheck();
   gcheck();
+  colourbuttons();
+  change();
 }
 
 void screen_box()

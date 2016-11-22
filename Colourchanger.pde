@@ -68,6 +68,12 @@ void gcheck()
     if (mouseY>57 && mouseY<73)
     {
       gcheck = true;
+      
+      if(mousePressed == true)
+      {
+        gshade = true;
+        bshade = false ;
+        rshade = false ;
     }
   }
   else
