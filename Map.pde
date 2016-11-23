@@ -3,6 +3,7 @@ void viewscreen()
   background(0);
   border();
   screen_box();
+  loadData();
   bcheck();
   rcheck();
   gcheck();
@@ -37,4 +38,16 @@ void screen_box()
   world.resize(width/20*17, height/5*2);
   image(world, width/20+15, height/6*3);
 
+}
+
+//load data from file
+void loadData()
+{
+  Table t = loadTable("world.csv");
+  for(int i = 0 ; i < t.getRowCount() ; i++)
+  {
+    TableRow row = t.getRow(i);
+    WORLD world = new WORLD(row);
+    data.add(world);
+  }
 }

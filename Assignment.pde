@@ -8,6 +8,8 @@ void setup()
   world = loadImage("world.jpg");
 }
 
+ArrayList<WORLD> data = new ArrayList<WORLD>();
+
 void draw()
 {
   if( starting == false)
