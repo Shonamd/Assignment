@@ -25,14 +25,18 @@ void border()
 {
   // border
   stroke(main);
+  //left side
   line((width/20),(height/25),(width/20),(height/25*24));
   line((width/20+5),(height/25),(width/20+5),(height/25*24));
-  line((width/20*19),(height/25),(width/20*19),(height-20));
+  //right side
+  line((width/20*19),(height/25),(width/20*19),(height/25*24));
   line((width/20*19+5),(height/25),(width/20*19+5),(height/25*24));
-  line((width/20),(height/20-10),(width-20),(height/20-10));
-  line((width/20),(height/20-15),(width-20),(height/20-15));
-  line((width/20),(height/25*24+5),(width-20),(height/25*24+5));  
-  line((width/20),(height/25*24+10),(width-20),(height/25*24+10)); 
+  //top side
+  line((width/20),(height/20-10),(width/20*19+5),(height/20-10));
+  line((width/20),(height/20-15),(width/20*19+5),(height/20-15));
+  //bottom side
+  line((width/20),(height/25*24+5),(width/20*19+5),(height/25*24+5));  
+  line((width/20),(height/25*24+10),(width/20*19+5),(height/25*24+10)); 
 }
 
 void title()
