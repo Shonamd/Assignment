@@ -3,8 +3,8 @@ void viewscreen()
   background(0);
   loadData();
   border();
-  mappoints();
   screen_box();
+  mappoints();
   bcheck();
   rcheck();
   gcheck();
@@ -55,6 +55,8 @@ void loadData()
 
 void mappoints()
 {
+  fill(main);
+  stroke(main);
   float countryx ;
   float countryy ;
   float wgridsize = width/20*17+width/20*17 ;
@@ -64,9 +66,8 @@ void mappoints()
   
   for(int i = 0 ; i < data.size() ; i++)
   {
-    countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)-2) ;
-    countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+2) ;
-    ellipse(countryx, countryy, 5, 5);
-    text(data.get(i).name, countryx, countryy);
+    countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)-3) ;
+    countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+3);
+    ellipse(countryx, countryy, 4, 4);
   }
 }
