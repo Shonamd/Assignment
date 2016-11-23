@@ -12,6 +12,8 @@ void viewscreen()
 
 void screen_box()
 {
+  float countryx ;
+  float countryy ;
   fill(0);
   rect(width/20+15, height/25+5, width/20*17, height/20*18 );
 
@@ -40,10 +42,10 @@ void screen_box()
   
   for(int i = 0 ; i < data.size() ; i++)
   {
-    println(data.get(i).name);
-    println(data.get(i).currency);
-    println(data.get(i).population);
-    println(data.get(i).notable);
+    countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)) ;
+    countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)) ;
+    ellipse(countryx, countryy, 5, 5);
+    fill(main);
   }
 
 }
