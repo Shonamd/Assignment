@@ -1,9 +1,9 @@
 void viewscreen()
 {
   background(0);
+  loadData();
   border();
   screen_box();
-  loadData();
   bcheck();
   rcheck();
   gcheck();
@@ -18,11 +18,11 @@ void screen_box()
   strokeWeight(.5);
   float wgridsize = width/20*17+width/20*17 ;
   float hgridsize = height/20*18+height/20*18 ;
-  float wboxsize = wgridsize/60 ;
-  float hboxsize = hgridsize/60 ;
+  float wboxsize = wgridsize/120 ;
+  float hboxsize = hgridsize/120 ;
   float rx = width/20+15, ry = height/25+5;
   
-  for(int i = 0; i < 30; i++)
+  for(int i = 0; i < 60; i++)
   {
     line(rx, height/25+5, rx, height/25+5+height/20*18 );
     rx = rx + wboxsize ;
@@ -37,6 +37,14 @@ void screen_box()
   //load map image
   world.resize(width/20*17, height/5*2);
   image(world, width/20+15, height/6*3);
+  
+  for(int i = 0 ; i < data.size() ; i++)
+  {
+    println(data.get(i).name);
+    println(data.get(i).currency);
+    println(data.get(i).population);
+    println(data.get(i).notable);
+  }
 
 }
 
