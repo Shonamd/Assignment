@@ -87,7 +87,7 @@ void title()
   
   shape(start, 0, 0);
   
-   fill(main);
+  fill(main);
   
   regular = createFont("Candara", 40);
   
