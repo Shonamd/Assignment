@@ -63,18 +63,13 @@ void title()
   
   shape(shape, 0, 0);
   
-  regular = createFont("Candara", 40);
-  textFont(regular);
-  text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
-  fill(main);
-  
   //Start button
   
   PShape start;
   
   start = createShape();
   start.beginShape();
-  start.stroke(7, 148, 175);
+  start.stroke(main);
   start.strokeWeight(1.5);
   if( check == false)
   {
@@ -92,6 +87,13 @@ void title()
   
   shape(start, 0, 0);
   
+   fill(main);
+  
+  regular = createFont("Candara", 40);
+  
+  textFont(regular);
+  text("World Map", width/4+25, ((height/25+height/6+height/25)/1.5+10));
+  
   if( check == true)
   {
     fill(0);
@@ -103,7 +105,6 @@ void title()
   
   textFont(regular);
   text("Start", width/4+75, height/4*3+35);
-    
 }
 
 void earth()

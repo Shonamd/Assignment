@@ -1,4 +1,4 @@
-class WORLD
+ class WORLD
 {
   String name ;
   String currency ;
