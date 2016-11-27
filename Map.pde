@@ -9,6 +9,7 @@ void viewscreen()
   rcheck();
   gcheck();
   colourbuttons();
+  
 }
 
 void screen_box()
@@ -70,4 +71,10 @@ void mappoints()
     countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+3);
     ellipse(countryx, countryy, 4, 4);
   }
+  
+  
+  
+  /*if (checkKey('1'))
+  {
+    text(*/
 }
