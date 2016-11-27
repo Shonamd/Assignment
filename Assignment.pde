@@ -4,6 +4,7 @@ void setup()
   background(0);
   world = loadImage("world.jpg");
   plane = new Plane(width/2, height/2, 0, 50) ;
+  loadData();
 }
 
 boolean starting = true;
@@ -21,11 +22,11 @@ void draw()
   //plane.render();
   if( starting == false)
   {
-    change();
+    //change();
     opening();
-    bcheck();
-    rcheck();
-    gcheck();
+    //bcheck();
+    //rcheck();
+    //gcheck();
     colourbuttons();
   }
   

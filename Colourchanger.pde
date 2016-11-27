@@ -42,16 +42,21 @@ void colourbuttons()
   }
   
   stroke(green);
-  if (gcheck == true)
+  //if (gcheck == true)
+  if(dist(12,65,  mouseX,mouseY) < 8)
   {
     fill(green);
-    ellipse(12, 65, 16, 16);
+    //ellipse(12, 65, 16, 16);
+    
   }
   else
   {
-    fill(0);
-    ellipse(12, 65, 16, 16);
-  }      
+    noFill();
+    //fill(0);
+    //ellipse(12, 65, 16, 16);
+  }  
+  ellipse(12, 65, 16, 16);
+  
 }
 
 void change()

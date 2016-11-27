@@ -56,7 +56,7 @@ class Plane
   }
   
   PVector force;
-  float power = 100;
+  float power = 400;
   
   
   void update()

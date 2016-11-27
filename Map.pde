@@ -1,7 +1,7 @@
 void viewscreen()
 {
   background(0);
-  loadData();
+  //loadData();
   border();
   screen_box();
   mappoints();
@@ -9,10 +9,9 @@ void viewscreen()
   rcheck();
   gcheck();
   colourbuttons();
-  //////////////////////
   plane.update();
   plane.render();
-};
+}//;
 void screen_box()
 {
   fill(0);
