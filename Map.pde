@@ -9,9 +9,10 @@ void viewscreen()
   rcheck();
   gcheck();
   colourbuttons();
-  
-}
-
+  //////////////////////
+  plane.update();
+  plane.render();
+};
 void screen_box()
 {
   fill(0);
@@ -69,12 +70,6 @@ void mappoints()
   {
     countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)-3) ;
     countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+3);
-    ellipse(countryx, countryy, 4, 4);
+    ellipse(countryx, countryy, 20, 20) ;
   }
-  
-  
-  
-  /*if (checkKey('1'))
-  {
-    text(*/
 }

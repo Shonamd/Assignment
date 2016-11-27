@@ -1,4 +1,4 @@
-boolean[] keys = new boolean[1000];
+
 
 float timeDelta = 1.0f / 60.0f;
 
@@ -50,7 +50,8 @@ class Plane
     rotate(theta);    
     
     // Use a PShape();
-    shape(shape, width/2, height/2);
+    //shape(shape, width/2, height/2);
+    shape(shape, 0, 0);
     popMatrix(); // Restore the transform
   }
   

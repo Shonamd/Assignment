@@ -1,39 +1,24 @@
-boolean starting = false;
-PImage world ;
-Plane plane ;
-
 void setup()
 {
   size(600, 600, P3D);
   background(0);
   world = loadImage("world.jpg");
-  plane = new Plane(width/20, height/20, width/25, height/25) ;
+  plane = new Plane(width/2, height/2, 0, 50) ;
 }
 
-//boolean[] keys = new boolean[1000];
+boolean starting = true;
+PImage world ;
+Plane plane ;
+boolean[] keys = new boolean[1000];
+
 ArrayList<WORLD> data = new ArrayList<WORLD>();
-
-/*void keyPressed()
-{ 
-  keys[keyCode] = true;
-}
- 
-void keyReleased()
-{
-  keys[keyCode] = false; 
-}
-
-boolean checkKey(int k)
-{
-  if (keys.length >= k) 
-  {
-    return keys[k] || keys[Character.toUpperCase(k)];  
-  }
-  return false;
-}*/
 
 void draw()
 {
+  stroke(0,255,0);
+  fill(0,255,0);
+  //plane.update();
+  //plane.render();
   if( starting == false)
   {
     change();
