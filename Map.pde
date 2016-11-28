@@ -11,6 +11,23 @@ void viewscreen()
   colourbuttons();
   plane.update();
   plane.render();
+  //wrap feature
+  if(plane.pos.y >= height/6*3+height/5*2)
+  {
+    plane.pos.y = height/6*3;
+  }
+  if(plane.pos.y <= height/6*3-5)
+  {
+    plane.pos.y = height/6*3+height/5*2-20;
+  }
+  if(plane.pos.x <= width/20+5)   
+  {
+    plane.pos.x = width/20+15+width/20*17-5 ;
+  }
+  if(plane.pos.x >= width/20*19)
+  {
+    plane.pos.x = width/20+15+5;
+  }
 }
 
 void screen_box()

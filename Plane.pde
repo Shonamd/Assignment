@@ -5,7 +5,7 @@ class Plane
   PVector pos;
   PVector forward;
   PVector velocity;
-  PVector accel;
+  PVector vroom;
   float theta;
   float size;
   float radius;
@@ -16,7 +16,7 @@ class Plane
   {
     pos = new PVector(x, y);
     forward = new PVector(0, -1);
-    accel = new PVector(0,0);
+    vroom = new PVector(0,0);
     velocity = new PVector(0,0);
     force = new PVector(0, 0);
     this.theta = theta;
@@ -78,8 +78,8 @@ class Plane
       theta += 0.1f;
     }
     
-    accel = PVector.div(force, mass);
-    velocity.add(PVector.mult(accel, timeDelta));
+    vroom = PVector.div(force, mass);
+    velocity.add(PVector.mult(vroom, timeDelta));
     pos.add(PVector.mult(velocity, timeDelta));
     force.x = force.y = 0;
     velocity.mult(0.95f);

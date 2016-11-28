@@ -10,11 +10,11 @@ void setup()
   fra = loadImage("fra.jpg");
   uk = loadImage("uk.jpg");
   irl = loadImage("irl.jpg");
-  plane = new Plane(width/2, height/2, 0, 30) ;
+  plane = new Plane(width/2, height/2+50, 0, 30) ;
   loadData();
 }
 
-boolean starting = false;
+boolean starting = true;
 PImage world ;
 PImage usa ;
 PImage aus ;
