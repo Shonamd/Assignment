@@ -18,42 +18,38 @@ void colourbuttons()
   
   //button check
   stroke(blue);
-  if( bcheck == true)
+  if(dist(12, 15, mouseX, mouseY) < 8)
   {
     fill(blue);
-    ellipse(12, 15, 16, 16);
   }
   else
   {
-    fill(0);
-    ellipse(12, 15, 16, 16);
+    noFill();
   }
+  ellipse(12, 15, 16, 16);
+
   
   stroke(red);
-  if (rcheck == true)
+  if (dist(12, 40, mouseX, mouseY) < 8)
   {
     fill(red);
-    ellipse(12, 40, 16, 16);
   }
   else
   {
     fill(0);
-    ellipse(12, 40, 16, 16);
   }
+  ellipse(12, 40, 16, 16);
+
   
   stroke(green);
   //if (gcheck == true)
   if(dist(12,65,  mouseX,mouseY) < 8)
   {
-    fill(green);
-    //ellipse(12, 65, 16, 16);
-    
+    fill(green);    
   }
   else
   {
     noFill();
-    //fill(0);
-    //ellipse(12, 65, 16, 16);
   }  
   ellipse(12, 65, 16, 16);
   
@@ -139,11 +135,12 @@ void gcheck()
         bshade = false ;
         rshade = false ;
         change();
-    }
-  }
-      else
-      {
-        gcheck = false;
       }
+    }
+    
+    else
+    {
+      gcheck = false;
+    }
   }
 }

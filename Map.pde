@@ -22,15 +22,15 @@ void screen_box()
   float hgridsize = height/20*18+height/20*18 ;
   float wboxsize = wgridsize/120 ;
   float hboxsize = hgridsize/120 ;
-  float rx = width/20+15, ry = height/25+5;
+  float rx = width/20+15, ry = height/6*3;
   
   for(int i = 0; i < 60; i++)
   {
-    line(rx, height/25+5, rx, height/25+5+height/20*18 );
+    line(rx, height/6*3, rx, height/6*3+height/5*2);
     rx = rx + wboxsize ;
   }
   
-  for(int i = 0; i < 60; i++)
+  for(int i = 0; i < 27; i++)
   {
     line(width/20+15, ry, width/20+15+width/20*17, ry);
     ry = ry + hboxsize ;
@@ -69,6 +69,11 @@ void mappoints()
   {
     countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)-3) ;
     countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+3);
-    ellipse(countryx, countryy, 20, 20) ;
+    ellipse(countryx, countryy, 5, 5) ;
   }
+  
+ /* if(dist(plane.pos.x, plane.pos.y, data.get(0).pointx-3, data.get(0).pointy+3) < 2.5 )
+  {
+    text(data.get(0).place, 
+  }*/
 }

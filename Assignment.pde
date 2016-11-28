@@ -7,7 +7,7 @@ void setup()
   loadData();
 }
 
-boolean starting = true;
+boolean starting = false;
 PImage world ;
 Plane plane ;
 boolean[] keys = new boolean[1000];
@@ -18,15 +18,14 @@ void draw()
 {
   stroke(0,255,0);
   fill(0,255,0);
-  //plane.update();
-  //plane.render();
+  
   if( starting == false)
   {
-    //change();
+    change();
     opening();
-    //bcheck();
-    //rcheck();
-    //gcheck();
+    bcheck();
+    rcheck();
+    gcheck();
     colourbuttons();
   }
   
