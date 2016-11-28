@@ -103,6 +103,8 @@ void info()
     text(data.get(0).currency, 150, 50);
     text(data.get(0).population, 150, 60);
     text(data.get(0).notable, 150, 70);
+    irl.resize(width/5*2, height/5*2);
+    image(irl, width/2, 40);
   }
   //UK
   if(dist((width/20+15)+((wboxsize)*(data.get(1).pointx)-3), (height/6*3)+((hboxsize)*(data.get(1).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -111,6 +113,8 @@ void info()
     text(data.get(1).currency, 150, 50);
     text(data.get(1).population, 150, 60);
     text(data.get(1).notable, 150, 70);
+    uk.resize(width/5*2, height/5*2);
+    image(uk, width/2, 40);
   }
   //USA
   if(dist((width/20+15)+((wboxsize)*(data.get(2).pointx)-3), (height/6*3)+((hboxsize)*(data.get(2).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -119,6 +123,8 @@ void info()
     text(data.get(2).currency, 150, 50);
     text(data.get(2).population, 150, 60);
     text(data.get(2).notable, 150, 70);
+    usa.resize(width/5*2, height/5*2);
+    image(usa, width/2, 40);
   }
   //France
   if(dist((width/20+15)+((wboxsize)*(data.get(3).pointx)-3), (height/6*3)+((hboxsize)*(data.get(3).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -127,6 +133,8 @@ void info()
     text(data.get(3).currency, 150, 50);
     text(data.get(3).population, 150, 60);
     text(data.get(3).notable, 150, 70);
+    fra.resize(width/5*2, height/5*2);
+    image(fra, width/2, 40);
   }
   //Germany
   if(dist((width/20+15)+((wboxsize)*(data.get(4).pointx)-3), (height/6*3)+((hboxsize)*(data.get(4).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -135,6 +143,8 @@ void info()
     text(data.get(4).currency, 150, 50);
     text(data.get(4).population, 150, 60);
     text(data.get(4).notable, 150, 70);
+    ger.resize(width/5*2, height/5*2);
+    image(ger, width/2, 40);
   }
   //Africa
   if(dist((width/20+15)+((wboxsize)*(data.get(5).pointx)-3), (height/6*3)+((hboxsize)*(data.get(5).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -143,6 +153,8 @@ void info()
     text(data.get(5).currency, 150, 50);
     text(data.get(5).population, 150, 60);
     text(data.get(5).notable, 150, 70);
+    sa.resize(width/5*2, height/5*2);
+    image(sa, width/2, 40);
   }
   //Australia
   if(dist((width/20+15)+((wboxsize)*(data.get(6).pointx)-3), (height/6*3)+((hboxsize)*(data.get(6).pointy)+3), plane.pos.x, plane.pos.y) < 5)
@@ -151,5 +163,7 @@ void info()
     text(data.get(6).currency, 150, 50);
     text(data.get(6).population, 150, 60);
     text(data.get(6).notable, 150, 70);
+    aus.resize(width/5*2, height/5*2);
+    image(aus, width/2, 40);
   }
 }
