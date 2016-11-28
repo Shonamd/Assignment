@@ -1,9 +1,9 @@
 void setup()
 {
-  size(600, 600, P3D);
+  size(500, 500, P3D);
   background(0);
   world = loadImage("world.jpg");
-  plane = new Plane(width/2, height/2, 0, 50) ;
+  plane = new Plane(width/2, height/2, 0, 30) ;
   loadData();
 }
 
