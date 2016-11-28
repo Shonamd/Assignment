@@ -3,12 +3,28 @@ void setup()
   size(500, 500, P3D);
   background(0);
   world = loadImage("world.jpg");
+  usa = loadImage("usa.jpg");
+  aus = loadImage("aus.jpg");
+  sa = loadImage("sa.jpg") ;
+  ger = loadImage("ger.jpg");
+  fra = loadImage("fra.jpg");
+  uk = loadImage("uk.jpg");
+  irl = loadImage("irl.jpg");
   plane = new Plane(width/2, height/2, 0, 30) ;
   loadData();
 }
 
 boolean starting = true;
 PImage world ;
+PImage usa ;
+PImage aus ;
+PImage sa ;
+PImage ger ;
+PImage fra ;
+PImage uk ;
+PImage irl ;
+
+
 Plane plane ;
 boolean[] keys = new boolean[1000];
 
