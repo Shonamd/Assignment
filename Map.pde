@@ -81,14 +81,69 @@ void mappoints()
 
 void info()
 {
+  regular = createFont("Candara", 10);
+  
+  textFont(regular);
+  
   float wgridsize = width/20*17+width/20*17 ;
   float hgridsize = height/20*18+height/20*18 ;
   float wboxsize = wgridsize/120 ;
   float hboxsize = hgridsize/120 ;
   
+  //Ireland
   if(dist((width/20+15)+((wboxsize)*(data.get(0).pointx)-3), (height/6*3)+((hboxsize)*(data.get(0).pointy)+3), plane.pos.x, plane.pos.y) < 5)
   {
     text(data.get(0).name, 50, 40);
     text(data.get(0).currency, 50, 50);
+    text(data.get(0).population, 50, 60);
+    text(data.get(0).notable, 50, 70);
+  }
+  //UK
+  if(dist((width/20+15)+((wboxsize)*(data.get(1).pointx)-3), (height/6*3)+((hboxsize)*(data.get(1).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(1).name, 50, 40);
+    text(data.get(1).currency, 50, 50);
+    text(data.get(1).population, 50, 60);
+    text(data.get(1).notable, 50, 70);
+  }
+  //USA
+  if(dist((width/20+15)+((wboxsize)*(data.get(2).pointx)-3), (height/6*3)+((hboxsize)*(data.get(2).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(2).name, 50, 40);
+    text(data.get(2).currency, 50, 50);
+    text(data.get(2).population, 50, 60);
+    text(data.get(2).notable, 50, 70);
+  }
+  //France
+  if(dist((width/20+15)+((wboxsize)*(data.get(3).pointx)-3), (height/6*3)+((hboxsize)*(data.get(3).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(3).name, 50, 40);
+    text(data.get(3).currency, 50, 50);
+    text(data.get(3).population, 50, 60);
+    text(data.get(3).notable, 50, 70);
+  }
+  //Germany
+  if(dist((width/20+15)+((wboxsize)*(data.get(4).pointx)-3), (height/6*3)+((hboxsize)*(data.get(4).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(4).name, 50, 40);
+    text(data.get(4).currency, 50, 50);
+    text(data.get(4).population, 50, 60);
+    text(data.get(4).notable, 50, 70);
+  }
+  //Africa
+  if(dist((width/20+15)+((wboxsize)*(data.get(5).pointx)-3), (height/6*3)+((hboxsize)*(data.get(5).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(5).name, 50, 40);
+    text(data.get(5).currency, 50, 50);
+    text(data.get(5).population, 50, 60);
+    text(data.get(5).notable, 50, 70);
+  }
+  //Australia
+  if(dist((width/20+15)+((wboxsize)*(data.get(6).pointx)-3), (height/6*3)+((hboxsize)*(data.get(16).pointy)+3), plane.pos.x, plane.pos.y) < 5)
+  {
+    text(data.get(6).name, 50, 40);
+    text(data.get(6).currency, 50, 50);
+    text(data.get(6).population, 50, 60);
+    text(data.get(6).notable, 50, 70);
   }
 }
