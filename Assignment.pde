@@ -14,7 +14,7 @@ void setup()
   loadData();
 }
 
-boolean starting = true;
+boolean starting = false;
 PImage world ;
 PImage usa ;
 PImage aus ;

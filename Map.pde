@@ -11,6 +11,7 @@ void viewscreen()
   colourbuttons();
   plane.update();
   plane.render();
+  
   //wrap feature
   if(plane.pos.y >= height/6*3+height/5*2)
   {
