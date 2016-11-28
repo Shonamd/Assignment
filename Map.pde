@@ -70,10 +70,25 @@ void mappoints()
     countryx = (width/20+15)+((wboxsize)*(data.get(i).pointx)-3) ;
     countryy = (height/6*3)+((hboxsize)*(data.get(i).pointy)+3);
     ellipse(countryx, countryy, 5, 5) ;
+    
+    if(dist(countryx, countryy, plane.pos.x, plane.pos.y) < 5)
+    {
+      info();
+    } 
   }
   
- /* if(dist(plane.pos.x, plane.pos.y, data.get(0).pointx-3, data.get(0).pointy+3) < 2.5 )
+}
+
+void info()
+{
+  float wgridsize = width/20*17+width/20*17 ;
+  float hgridsize = height/20*18+height/20*18 ;
+  float wboxsize = wgridsize/120 ;
+  float hboxsize = hgridsize/120 ;
+  
+  if(dist((width/20+15)+((wboxsize)*(data.get(0).pointx)-3), (height/6*3)+((hboxsize)*(data.get(0).pointy)+3), plane.pos.x, plane.pos.y) < 5)
   {
-    text(data.get(0).place, 
-  }*/
+    text(data.get(0).name, 50, 40);
+    text(data.get(0).currency, 50, 50);
+  }
 }

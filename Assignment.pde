@@ -7,7 +7,7 @@ void setup()
   loadData();
 }
 
-boolean starting = false;
+boolean starting = true;
 PImage world ;
 Plane plane ;
 boolean[] keys = new boolean[1000];

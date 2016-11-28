@@ -82,7 +82,7 @@ class Plane
     velocity.add(PVector.mult(accel, timeDelta));
     pos.add(PVector.mult(velocity, timeDelta));
     force.x = force.y = 0;
-    velocity.mult(0.99f);
+    velocity.mult(0.95f);
   }
   
 }
