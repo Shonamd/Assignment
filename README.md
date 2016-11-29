@@ -10,3 +10,5 @@ It also contains 3 buttons that will light up when hovered over and will change 
 
 The view screen
 After clicking on the start button on the previous screen, the main screen will be called. This screen contains a map and a small plane . If you hover over a country, a function will be called that will find the country that has been hovered over and will call up information and images that has been loaded into the program in setup. It will display this information on the top of the screen. The plane can then fly to another country, and attempts to fly of the map will end in the plane showing up on the other side of the map.
+
+[![OOP assignent](https://img.youtube.com/vi/r_pte_5AqBE/0.jpg)](https://www.youtube.com/watch?v=r_pte_5AqBE)
