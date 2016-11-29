@@ -2,7 +2,7 @@
 
 This programs functions as an interactive world map that will show you information about countries if you hover a plane over it.
 
-It include:
+It includes:
 
 An opening screen.
 This screen has a 3d sphere that will rotate by pressing the left key and stops by pressing any other key. This was achieved by incrementing the x variable in the camera function, which rotates the view of the sphere without actually rotating the sphere itself. 
